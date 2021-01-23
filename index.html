@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>RajaResik Website Landing Page</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section>
+    <div class="circle"></div>
+    <header>
+
+      <a href="#"><img src="images/logo3.png" class="logo"></a>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Testimoni</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <div class="content">
+      <div class="textBox">
+        <h2>Cuci Kebutuhanmu<br>Hanya di <span>RajaResik</span></h2>
+        <p>Sebuah jasa yang menawarkan pembersihan,perawatan serta konsultasi untuk permasalahan yang anda hadapi dalam merawat Sepatu, Tas, Helm dan Jaket Kulit. Menggunakan bahan yang berkualitas serta di bersihkan oleh Profesional Tim Kami</p>
+        <a href="#">Selengkapnya</a>
+      </div>
+
+
+      <div class="imgBox">
+        <img src="images/sepatu3.png" class="starbucks">
+      </div>
+    </div>
+    <ul class="thumb">
+      <li><img src="images/bag1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')"></li>
+      <li><img src="images/jaket1.png" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')"></li>
+      <li><img src="images/helm1.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"></li>
+    </ul>
+
+    <ul class="sci">
+      <li><a href="#"><img src="images/facebook.png"></a></li>
+      <li><a href="#"><img src="images/twitter.png"></a></li>
+      <li><a href="#"><img src="images/instagram.png"></a></li>
+    </ul>
+  </section>
+
+  <script type="text/javascript">
+    function imgSlider(anything) {
+      document.queryselector('.starbucks').src = anything;
+    }
+
+    function changeCircleColor(color) {
+      const circle = document.queryselector('.circle');
+      circle.style.background = color;
+    }
+  </script>
+</body>
+
+</html>
